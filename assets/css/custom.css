@@ -207,7 +207,9 @@
 .faq {
   padding: 0;
 }
-
+.faq .accordion-body {
+  font-weight: 300;
+}
 .faq h2 button,
 .faq .accordion-body {
   color: #fff;
