@@ -129,6 +129,10 @@
   margin: 10px 0;
 }
 
+.how-it-works .info-block p {
+  font-weight: 300;
+}
+
 .how-it-works .info-block div {
   border-radius: 16px;
   padding: 32px;
