@@ -156,6 +156,7 @@
 
 .accordion-list li a.collapsed h2 {
   color: #fff;
+  text-align: center;
 }
 .accordion-list li a.collapsed img {
   /* fill: #fca311; */
