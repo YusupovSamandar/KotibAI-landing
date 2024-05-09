@@ -12,7 +12,9 @@
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon" />
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- Google Fonts -->
   <link
     href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
@@ -62,15 +64,17 @@
           </li>
           <li><a class="nav-link scrollto" href="#about">Transcription</a></li>
           <li><a class="nav-link scrollto" href="#services">Plans</a></li>
+          <li class="mobile-active-only">
+            <select class="form-select form-select-sm form-select-language" aria-label="Dark select example"
+              onchange="location = this.value;">
+              <option value="./index_uz.html">Uzb</option>
+              <option value="./index.html">Рус</option>
+              <option value="./index_en.html" selected>Eng</option>
+              <!-- <option value="./english-page.html">Eng</option> -->
+            </select>
+          </li>
         </ul>
-        <ul class="action-navbar-btns">
-          <!-- <li>
-            <a href="https://www.dashboard.kotib.ai">
-              <button type="button" class="btn btn-outline-warning sign-in-btn">
-                Sign in
-              </button>
-            </a>
-          </li> -->
+        <ul class="action-navbar-btns desktop-only">
           <li>
             <button type="button" class="btn btn-warning try-for-free-btn">
               <a class="no-style-a" href="https://www.dashboard.kotib.ai">
@@ -287,7 +291,7 @@
       </div>
     </section>
     <!-- End Skills Section -->
-    <section class="about-wrapper">
+    <section class="about-wrapper pb-0">
       <section class="faq">
         <div class="container">
           <h1 data-aos="fade-up">Frequently Asked Questions (FAQ)</h1>
@@ -482,26 +486,93 @@
           </div>
         </div>
       </section>
+      <br><br><br>
+      <section id="plans">
+        <h1 class="plans-header">Plans and Prices</h1>
+        <p class="free-register-txt">When registered you get <b>16 minutes</b> of generation for <b>free</b></p>
+        <br>
+        <div class="row plans-container custom-container">
+          <div class="col-sm-6 col-md-6 col-lg-3">
+            <div class="plan">
+              <div class="most-popular">
+                <p>Most popular choice</p>
+              </div>
+              <h1 class="plan-header">36 000 <br> sums</h1>
+              <p>1 hour long generating</p>
+              <a href="https://www.dashboard.kotib.ai">
+                <button type="button" class="btn btn-warning buy-btn">Buy</button>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-3">
+            <div class="plan most-popular-active">
+              <div class="most-popular">
+                <p>Most popular choice</p>
+              </div>
+              <h1 class="plan-header">100 000 sums</h1>
+              <p>3 hour long generating</p>
+              <a href="https://www.dashboard.kotib.ai">
+                <button type="button" class="btn btn-warning buy-btn">Buy</button>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-3">
+            <div class="plan">
+              <div class="most-popular">
+                <p>Most popular choice</p>
+              </div>
+              <h1 class="plan-header">200 000 sums</h1>
+              <p>7 hour long generating</p>
+              <a href="https://www.dashboard.kotib.ai">
+                <button type="button" class="btn btn-warning buy-btn">Buy</button>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-3">
+            <div class="plan">
+              <div class="most-popular">
+                <p>Most popular choice</p>
+              </div>
+              <h1 class="plan-header">500 000 sums</h1>
+              <p>17 hour long generating</p>
+              <a href="https://www.dashboard.kotib.ai">
+                <button type="button" class="btn btn-warning buy-btn">Buy</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
       <br /><br /><br />
       <section class="footer-kotub">
-        <div class="container-fluid">
+        <div class="container-fluid custom-container">
           <div class="row">
             <div class="col-lg-3">
               <img src="./assets/img/svgs/logo.svg" alt="" />
             </div>
-            <div class="col-lg-9">
+            <div class="col-lg-9 footer-navigations">
               <ul>
                 <li>
-                  <a class="nav-link scrollto active" href="#hero">О проекте</a>
+                  <a class="nav-link scrollto active" href="#hero">About the project</a>
                 </li>
                 <li>
-                  <a class="nav-link scrollto" href="#about">Транскрипция</a>
+                  <a class="nav-link scrollto" href="#about">Transcription</a>
                 </li>
                 <li>
-                  <a class="nav-link scrollto" href="#services">Тарифы</a>
+                  <a class="nav-link scrollto" href="#plans">Plans</a>
                 </li>
               </ul>
             </div>
+          </div>
+          <div class="footer-line"></div>
+          <div class="copyright-container">
+            <p>KOTIB.AI @ 2024. Все права защищены.</p>
+            <ul>
+              <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+              <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+              <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+              <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+              <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+            </ul>
           </div>
         </div>
       </section>

@@ -12,6 +12,10 @@
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon" />
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+  <!-- Font awesome Pro v5.10.0 CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!-- Google Fonts -->
   <link
@@ -58,20 +62,20 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li>
-            <a class="nav-link scrollto active" href="#hero">Loyiha haqida
-            </a>
+            <a class="nav-link scrollto active" href="#hero">Loyiha haqida</a>
           </li>
           <li><a class="nav-link scrollto" href="#about">Transkripsiya</a></li>
-          <li><a class="nav-link scrollto" href="#services">Tariflar</a></li>
+          <li><a class="nav-link scrollto" href="#plans">Tariflar</a></li>
+          <li class="mobile-active-only">
+            <select class="form-select form-select-sm form-select-language" aria-label="Dark select example"
+              onchange="location = this.value;">
+              <option value="./index_uz.html" selected>Uzb</option>
+              <option value="./index.html">Рус</option>
+              <option value="./index_en.html">Eng</option>
+            </select>
+          </li>
         </ul>
-        <ul class="action-navbar-btns">
-          <!-- <li>
-            <a href="https://www.dashboard.kotib.ai">
-              <button type="button" class="btn btn-outline-warning sign-in-btn">
-                Kirish
-              </button>
-            </a>
-          </li> -->
+        <ul class="action-navbar-btns desktop-only">
           <li>
             <button type="button" class="btn btn-warning try-for-free-btn">
               <a class="no-style-a" href="https://www.dashboard.kotib.ai">
@@ -85,7 +89,6 @@
               <option value="./index_uz.html" selected>Uzb</option>
               <option value="./index.html">Рус</option>
               <option value="./index_en.html">Eng</option>
-              <!-- <option value="./english-page.html">Eng</option> -->
             </select>
           </li>
         </ul>
@@ -252,7 +255,8 @@
                     </a>
                     <div id="accordion-list-4" class="collapse" data-bs-parent=".accordion-list">
                       <p>
-                        Kotib Ai'dan foydalanish va to'lov qilish oson bolib, pul o'tkazish uchun bir nechta variantlarni
+                        Kotib Ai'dan foydalanish va to'lov qilish oson bolib, pul o'tkazish uchun bir nechta
+                        variantlarni
                         taqdim etadi.
                       </p>
                     </div>
@@ -276,18 +280,18 @@
     <section id="skills" class="skills">
       <div class="container-fluid skills-container" data-aos="fade-up">
         <div class="row">
-          <div class="col-lg-3 pt-4 pt-lg-0 content" data-aos="fade-left" data-aos-delay="100">
+          <div class="col-sm-12 col-lg-3 pt-4 pt-lg-0 content" data-aos="fade-left" data-aos-delay="100">
             <h3>So' zlardan tashqariga chiqsak</h3>
             <p>Xizmat qanday ishlashini tushunish uchun videoimizni tomosha qiling.</p>
           </div>
-          <div class="col-lg-8" data-aos="fade-right" data-aos-delay="100">
+          <div class="col-sm-12 col-lg-8" data-aos="fade-right" data-aos-delay="100">
             <img style="width: 100%" src="assets/img/video.jpg" class="img-fluid" alt="" />
           </div>
         </div>
       </div>
     </section>
     <!-- End Skills Section -->
-    <section class="about-wrapper">
+    <section class="about-wrapper pb-0">
       <section class="faq">
         <div class="container">
           <h1 data-aos="fade-up">Tez-tez beriladigan savollar (FAQ)</h1>
@@ -474,33 +478,100 @@
           </div>
         </div>
       </section>
-      <br /><br /><br />
-      <section class="footer-kotub">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-lg-3">
-              <img src="./assets/img/svgs/logo.svg" alt="" />
+      <br><br><br>
+      <section id="plans">
+        <h1 class="plans-header">Tariflar va narxlar</h1>
+        <p class="free-register-txt">Ro'yxatdan o'tganingizda siz 16 daqiqalik avlodni bepul olasiz</p>
+        <br>
+        <div class="row plans-container custom-container">
+          <div class="col-sm-6 col-md-6 col-lg-3">
+            <div class="plan">
+              <div class="most-popular">
+                <p>Eng mashhur tanlov</p>
+              </div>
+              <h1 class="plan-header">36 000 <br> sums</h1>
+              <p>1 soat vaqt</p>
+              <a href="https://www.dashboard.kotib.ai">
+                <button type="button" class="btn btn-warning buy-btn">Купить</button>
+              </a>
             </div>
-            <div class="col-lg-9">
-              <ul>
-                <li>
-                  <a class="nav-link scrollto active" href="#hero">О проекте</a>
-                </li>
-                <li>
-                  <a class="nav-link scrollto" href="#about">Транскрипция</a>
-                </li>
-                <li>
-                  <a class="nav-link scrollto" href="#services">Тарифы</a>
-                </li>
-              </ul>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-3">
+            <div class="plan most-popular-active">
+              <div class="most-popular">
+                <p>Eng mashhur tanlov</p>
+              </div>
+              <h1 class="plan-header">100 000 sums</h1>
+              <p>3 soat vaqt</p>
+              <a href="https://www.dashboard.kotib.ai">
+                <button type="button" class="btn btn-warning buy-btn">Купить</button>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-3">
+            <div class="plan">
+              <div class="most-popular">
+                <p>Eng mashhur tanlov</p>
+              </div>
+              <h1 class="plan-header">200 000 sums</h1>
+              <p>7 soat vaqt</p>
+              <a href="https://www.dashboard.kotib.ai">
+                <button type="button" class="btn btn-warning buy-btn">Купить</button>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-3">
+            <div class="plan">
+              <div class="most-popular">
+                <p>Eng mashhur tanlov</p>
+              </div>
+              <h1 class="plan-header">500 000 sums</h1>
+              <p>17 soat vaqt</p>
+              <a href="https://www.dashboard.kotib.ai">
+                <button type="button" class="btn btn-warning buy-btn">Купить</button>
+              </a>
             </div>
           </div>
         </div>
       </section>
+      <br /><br /><br />
       <!-- ======= Cta Section ======= -->
+
+      <section class="footer-kotub">
+        <div class="container-fluid custom-container">
+          <div class="row">
+            <div class="col-lg-3">
+              <img src="./assets/img/svgs/logo.svg" alt="" />
+            </div>
+            <div class="col-lg-9 footer-navigations">
+              <ul>
+                <li>
+                  <a class="nav-link scrollto active" href="#hero">Loyiha haqida</a>
+                </li>
+                <li>
+                  <a class="nav-link scrollto" href="#about">Transkripsiya</a>
+                </li>
+                <li>
+                  <a class="nav-link scrollto" href="#plans">Tariflar</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-line"></div>
+          <div class="copyright-container">
+            <p>KOTIB.AI @ 2024. Все права защищены.</p>
+            <ul>
+              <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+              <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+              <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+              <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+              <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </section>
     <!-- End Cta Section -->
-
 
     <!-- End Footer -->
 
