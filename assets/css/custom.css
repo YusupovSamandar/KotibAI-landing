@@ -368,7 +368,7 @@
   display: block;
 }
 @media (max-width: 991px) {
-  .try-for-free-btn {
+  .navbar .try-for-free-btn {
     display: none !important;
   }
 
