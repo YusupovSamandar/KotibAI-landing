@@ -90,6 +90,9 @@
   border-radius: 8px;
   background: #fca311 !important;
 }
+.our-partners {
+  justify-content: center;
+}
 
 .how-it-works {
   display: flex;
@@ -282,6 +285,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.copyright-container .aferta-container a {
+  margin: 0 10px;
 }
 .copyright-container ul {
   display: flex;
