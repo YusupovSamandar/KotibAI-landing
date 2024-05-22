@@ -273,3 +273,41 @@
     });
   });
 })();
+// swiper element
+const swiperEl = document.querySelector("swiper-container");
+
+// swiper parameters
+const swiperParams = {
+  slidesPerView: 2,
+  breakpoints: {
+    640: {
+      slidesPerView: 3,
+    },
+    1024: {
+      slidesPerView: 4,
+    },
+    1440: {
+      slidesPerView: 5,
+    },
+    1920: {
+      slidesPerView: 6,
+    },
+  },
+  on: {
+    init() {
+      // ...
+    },
+  },
+};
+
+// now we need to assign all parameters to Swiper element
+Object.assign(swiperEl, swiperParams);
+
+// and now initialize it
+swiperEl.initialize();
+
+const swiper = new Swiper(".our-partners", {
+  autoplay: {
+    delay: 5000,
+  },
+});

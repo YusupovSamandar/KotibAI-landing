@@ -420,4 +420,7 @@
     display: block;
     margin: 0;
   }
+  .header-logos {
+    display: none;
+  }
 }
