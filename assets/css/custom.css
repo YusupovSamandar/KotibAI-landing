@@ -198,6 +198,10 @@
   padding: 0;
 }
 
+.why-us .accordion-list ul li div p {
+  padding: 45px 0 0 0;
+}
+
 .skills-container {
   padding: 0 132px;
 }
